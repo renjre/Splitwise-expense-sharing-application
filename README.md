@@ -73,5 +73,5 @@ for other types
 Note: do not create expense splits for user who paid total amount in Expense, just need to create expense splits for those user who are in room, 
 
 `step5`
-To get all owes details use http://127.0.0.1:8000/api/owes-details/
+To get all owes details use http://127.0.0.1:8000/api/users-owes/
 
