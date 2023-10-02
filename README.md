@@ -75,3 +75,5 @@ Note: do not create expense splits for user who paid total amount in Expense, ju
 `step5`
 To get all owes details use http://127.0.0.1:8000/api/users-owes/
 
+To get user's owes details use http://127.0.0.1:8000/api/my-owes/1
+
