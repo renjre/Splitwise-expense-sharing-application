@@ -15,6 +15,7 @@ urlpatterns = [
     path('expenses/<int:pk>/', ExpenseDetailView.as_view(), name='expense_detail'),
     path('expense-splits/', ExpenseSplitList.as_view(), name='expense_split_list'),
 
+    path('my-owes/<int:pk>/', MyOwesView.as_view(), name='all_users_owes_lends_view'),
     path('users-owes/', AllUsersOwesView.as_view(), name='all_users_owes_lends_view'),
 
 ]

@@ -132,3 +132,19 @@ class AllUsersOwesView(APIView):
                rel.append(x.__str__()) 
         return Response({"result": rel})
     
+class MyOwesView(APIView):
+    def get_object(self, pk):
+        try:
+            return User.objects.get(pk=pk)
+        except User.DoesNotExist:
+            raise Http404
+
+    def get(self, request, pk):
+        usr = self.get_object(pk)
+        all_owes = usr.owes_to.all()        
+        rel = []
+        if all_owes:
+            for x in all_owes:
+               rel.append(x.__str__()) 
+        return Response({"result": rel})
+
