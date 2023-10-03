@@ -1,6 +1,5 @@
 ﻿# Splitwise-expense-sharing-application
 ### this is postman collection link
-https://issarainstitute.postman.co/workspace/Team-Workspace~731b8291-0a03-44f1-80ff-972f2e5b026b/collection/18595384-6ad1a312-5d8f-44c7-bdc7-cc2e3db2fbba?action=share&creator=18595384
 
 `step1`
 Create users using http://127.0.0.1:8000/api/users/ 
